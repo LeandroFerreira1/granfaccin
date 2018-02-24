@@ -1,0 +1,33 @@
+
+<a href="#" class="voltar-ao-topo"><i class="material-icons">keyboard_arrow_up</i></a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    jQuery(function () {
+     jQuery(window).scroll(function () {
+      if (jQuery(this).scrollTop() > 400) {
+       $(".navbar-transparente").css('padding', '10px 0px');
+      } else {
+       $(".navbar-transparente").css('padding', '40px 0px');
+       $(".navbar-transparente").css('transition', 'padding 0.4s');
+      }
+     });
+   });
+</script>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.voltar-ao-topo').fadeIn();
+                }else{
+                  $('.voltar-ao-topo').fadeOut();
+                }
+            });
+            $('.voltar-ao-topo').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+      });
+    </script>

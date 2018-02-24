@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>404 Página não encontrada</title>
+
+	<meta name="description" content="Descrição do site.
+">
+
+	<link rel="canonical" href="http://localhost:4000/404.html">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+
+	<body>
+
+		<header>
+		<!--Barra de navegação-->
+	<nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+		<div class="container-fluid">
+			<div class="col-md-10 col-md-offset-1">
+
+			<!-- header -->
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse" data-target="#barra-navegacao">
+					<span class="sr-only">alternar navegação</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="index.html" class="navbar-brand">
+					<span class="img-logo">Granito</span>
+				</a>
+			</div>
+
+			<!-- navbar-->
+			<div class="collapse navbar-collapse " id="barra-navegacao">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://localhost:4000">Início</a></li>
+					<li><a href="http://localhost:4000/institucional/">Institucional</a></li>
+					<li><a href="http://localhost:4000/catalogo/">Catálogo</a></li>
+					<li><a href="http://localhost:4000/contato/">Contato</a></li>
+				</ul>
+			</div>
+		</div>
+		</div><!--fim container-->
+	</nav><!-- fim navbar-->
+</header>
+
+
+		<div>
+
+		<div>
+   	<div>
+       	<p><strong>Página não encontrada :(</strong></p>
+        <p>A página solicitada não pôde ser encontrada.
+        <p><a href="http://localhost:4000">Início</a></p>
+    </div>
+</div>
+
+
+		</div>
+
+		<footer class="footer text-center">
+      <div class="copyright">
+      	Site &copy;&nbsp;Copyright 2018. Todos os direitos reservados.
+      </div>
+</footer>
+
+
+		
+<a href="#" class="voltar-ao-topo"><i class="material-icons">keyboard_arrow_up</i></a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    jQuery(function () {
+     jQuery(window).scroll(function () {
+      if (jQuery(this).scrollTop() > 400) {
+       $(".navbar-transparente").css('padding', '10px 0px');
+      } else {
+       $(".navbar-transparente").css('padding', '40px 0px');
+       $(".navbar-transparente").css('transition', 'padding 0.4s');
+      }
+     });
+   });
+</script>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.voltar-ao-topo').fadeIn();
+                }else{
+                  $('.voltar-ao-topo').fadeOut();
+                }
+            });
+            $('.voltar-ao-topo').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+      });
+    </script>
+
+
+
+	</body>
+
+</html>
