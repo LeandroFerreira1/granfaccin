@@ -14,7 +14,7 @@
 	<link rel=icon href="/assets/img/logo-reduzido.png" sizes="any">
 	<link rel="canonical" href="http://localhost:4000/sobre/">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
@@ -50,8 +50,19 @@
 					<li><a href="http://localhost:4000/empresa/">Empresa</a></li>
 					<li><a href="http://localhost:4000/materiais/">Materiais</a></li>
 					<li><a href="http://localhost:4000/contato/">Contato</a></li>
+					<li><a href="http://localhost:4000"><img class="img-eng" src="/assets/img/eng.jpg" alt=""></a></li>
+					<div id="contato" class="site-header-right">
+							<div class="clearfix"></div>
+							<ul class="header-contacts ">
+									<li><i class="far fa-envelope"></i> <span class="hidden-xs"></span>contato@granfaccin.com.br</li>
+									<div class="clearfix"></div>
+									<li><i class="fas fa-phone-square"></i> <span class="hidden-xs"></span>+55 28 0000 0000</li>
+							</ul>
+					</div>
 				</ul>
+
 			</div>
+
 		</div>
 		</div><!--fim container-->
 	</nav><!-- fim navbar-->
@@ -72,7 +83,7 @@
 
 
 		
-<a href="#" class="voltar-ao-topo"><i class="material-icons">keyboard_arrow_up</i></a>
+<a href="#" class="voltar-ao-topo"><i class="fas fa-angle-up"></i></a>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -94,10 +105,18 @@ function trocaClasse( elemento,antiga, nova) {
     elemento.classList.remove(antiga);
     elemento.classList.add(nova);
 }
+function eliminaClasse(elemento) {
+    $(elemento).remove();
+}
+function addClasse(elemento) {
+
+}
 jQuery(window).scroll(function (){
+    var contacts = document.querySelector('#contato');
     var logo = document.querySelector('#logo');
     if (jQuery(this).scrollTop() > 400) {
       trocaClasse(logo, 'img-logo', 'img-reduzido');
+      eliminaClasse(contacts);
     }else{
       trocaClasse(logo, 'img-reduzido', 'img-logo');
     }

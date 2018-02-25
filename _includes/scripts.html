@@ -1,5 +1,5 @@
 
-<a href="#" class="voltar-ao-topo"><i class="material-icons">keyboard_arrow_up</i></a>
+<a href="#" class="voltar-ao-topo"><i class="fas fa-angle-up"></i></a>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -21,10 +21,18 @@ function trocaClasse( elemento,antiga, nova) {
     elemento.classList.remove(antiga);
     elemento.classList.add(nova);
 }
+function eliminaClasse(elemento) {
+    $(elemento).remove();
+}
+function addClasse(elemento) {
+
+}
 jQuery(window).scroll(function (){
+    var contacts = document.querySelector('#contato');
     var logo = document.querySelector('#logo');
     if (jQuery(this).scrollTop() > 400) {
       trocaClasse(logo, 'img-logo', 'img-reduzido');
+      eliminaClasse(contacts);
     }else{
       trocaClasse(logo, 'img-reduzido', 'img-logo');
     }
