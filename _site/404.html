@@ -38,8 +38,8 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a href="index.html" class="navbar-brand">
-					<span class="img-logo">Granito</span>
+				<a href="index.html"  class="navbar-brand">
+					<span id="logo" class="img-logo">GRANFACCIN</span>
 				</a>
 			</div>
 
@@ -94,6 +94,21 @@
       }
      });
    });
+</script>
+
+<script type="text/javascript">
+function trocaClasse( elemento,antiga, nova) {
+    elemento.classList.remove(antiga);
+    elemento.classList.add(nova);
+}
+jQuery(window).scroll(function (){
+    var logo = document.querySelector('#logo');
+    if (jQuery(this).scrollTop() > 400) {
+      trocaClasse(logo, 'img-logo', 'img-reduzido');
+    }else{
+      trocaClasse(logo, 'img-reduzido', 'img-logo');
+    }
+});
 </script>
 
 <script type="text/javascript">
