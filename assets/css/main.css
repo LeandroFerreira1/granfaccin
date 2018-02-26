@@ -7,43 +7,28 @@ body, html {
 }
 body{
   overflow-x: hidden;
-  background-image: url("/assets/img/03.jpg");
+
   background-attachment: fixed;
 
+
 }
-
-
 
 /*Barra de navegação*/
 .img-logo{
-  height: 400px;
-  width: 250px;
-  display: block;
-  background: url('/assets/img/logo.png') no-repeat;
-  background-size: contain;
-  color: transparent;
-  margin-top: -2vh;
-}
-
-.img-reduzido{
-  height: 200px;
-  width: 70px;
-  display: block;
-  background: url('/assets/img/logo-reduzido.png') no-repeat;
-  background-size: contain;
-  color: transparent;
-  margin-top: -2vh;
+  height: 30px;
+  margin-top: -3%;
+  width: auto;
 }
 
 .navbar-inverse .navbar-toggle{
   border: none;
 }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
-  background-color: white;
+  background-color: #fff;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-  border-color: white;
+  border-color: #fff;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar{
@@ -51,8 +36,8 @@ body{
 }
 
 nav.navbar-transparente{
-  padding: 40px 0px;
-  background: rgba(255,255,255, 0.9);
+  padding: 30px 0px;
+  background: #fff;
   border-bottom: 2px solid #18bf20;
 
 }
@@ -118,27 +103,16 @@ nav.navbar-transparente{
     background-color:rgba(24, 191, 32, 0.7);
   }
 
-
-.fundo{
-  background: gray;
-  height: 100vh;
-}
-
 .titulo{
   color: #fff;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #008000;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: rgba(0,0,0, 0.6);
+  background: radial-gradient(circle, rgba(33,120,33,0.6),rgba(44,160,44,0.6), rgba(55,200,55,0.6));
+
 }
 
-.titulo span{
-  font-weight: bold;
-  text-shadow: 0px 0px;
-  color: white;
-  text-transform: uppercase;
-}
 .sobre{
   background: white;
 
@@ -252,11 +226,11 @@ nav.navbar-transparente{
 }
 
 .hr-style{
-  color: #18bf20;
-  background-color: #18bf20;
+  background-color: #fff;
   border: none;
   height: 0.2em;
-  width: 10%;
+  width: 25%;
+  box-shadow: 1px 1px #008000;
 }
 
 .footer{
@@ -266,4 +240,22 @@ nav.navbar-transparente{
 
 .copyright {
     color: #bbb;
+}
+
+
+@media screen and (min-width: 360px) {
+  .img-logo{
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .hr-style{
+    width: 10%;
+  }
+
+  .img-logo{
+    height: 45px;
+  }
 }

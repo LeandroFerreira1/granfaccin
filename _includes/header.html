@@ -14,8 +14,8 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a href="index.html"  class="navbar-brand">
-					<span id="logo" class="img-logo">GRANFACCIN</span>
+				<a href="{{ site.url }}"  class="navbar-brand">
+					{% include logo.html %}
 				</a>
 			</div>
 
@@ -26,15 +26,8 @@
 					<li><a href="{{ site.url }}/empresa/">Empresa</a></li>
 					<li><a href="{{ site.url }}/materiais/">Materiais</a></li>
 					<li><a href="{{ site.url }}/contato/">Contato</a></li>
-					<li><a href="{{ site.url }}"><img class="img-eng" src="{{ "/assets/img/eng.jpg" | relative_url}}" alt=""></a></li>
-					<div id="contato" class="site-header-right">
-							<div class="clearfix"></div>
-							<ul class="header-contacts ">
-									<li><i class="far fa-envelope"></i> <span class="hidden-xs"></span>contato@granfaccin.com.br</li>
-									<div class="clearfix"></div>
-									<li><i class="fas fa-phone-square"></i> <span class="hidden-xs"></span>+55 28 0000 0000</li>
-							</ul>
-					</div>
+
+
 				</ul>
 
 			</div>
