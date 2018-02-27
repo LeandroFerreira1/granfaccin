@@ -1,0 +1,99 @@
+#material{
+  margin-top: 20vh;
+}
+
+.titulo-mat{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background-image: url('/assets/img/back.jpg');
+  margin-top: 15vh;
+  text-shadow: 1px 1px #000;
+  margin-bottom: -10vh;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #fff;
+  cursor: default;
+  background-color: rgba(44,160,44,0.8);
+  border: solid 0px black;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: rgba(55,200,55,0.6);
+  color: #fff;
+}
+
+.nav-tabs>li>a{
+  border: 0px;
+  margin-right: 10px;
+}
+
+
+.nav-tabs{
+  border-bottom: 0px solid #ddd;
+}
+
+.nav-tabs a{
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.nav-tabs>li>a{
+  border-radius: 0px;
+}
+
+.imagem{
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.dg-overlay{
+  margin-bottom: 15px;
+
+}
+
+.dg-item  .dg-overlay {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    bottom: 5px;
+    left: 20px;
+    border: 3px rgb(55,200,55) solid;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+       -moz-transition: opacity .5s ease;
+         -o-transition: opacity .5s ease;
+            transition: opacity .5s ease;
+}
+
+.dg-item .dg-overlay-text {
+    line-height: 100%;
+    position: absolute;
+    z-index: 11;
+    right: 0;
+    left: 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+
+    text-transform: uppercase;
+    -webkit-transition: opacity .5s, top .7s, ease;
+       -moz-transition: opacity .5s, top .7s, ease;
+         -o-transition: opacity .5s, top .7s, ease;
+            transition: opacity .5s, top .7s, ease;
+}
+
+.dg-item:hover .dg-overlay {
+    opacity: 1;
+}
+
+.dg-item:hover .dg-overlay-text {
+    opacity: 1;
+    top: 50%;
+}

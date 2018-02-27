@@ -7,10 +7,7 @@ body, html {
 }
 body{
   overflow-x: hidden;
-
   background-attachment: fixed;
-
-
 }
 
 /*Barra de navegação*/
@@ -174,55 +171,6 @@ nav.navbar-transparente{
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-}
-
-/*Efeito das imagens*/
-
-.dg-overlay{
-  margin-bottom: 15px;
-}
-
-.dg-item  .dg-overlay {
-    position: absolute;
-    z-index: 10;
-    top: 5px;
-    right: 20px;
-    bottom: 5px;
-    left: 20px;
-    background: white;
-    opacity: 0;
-    -webkit-transition: opacity .5s ease;
-       -moz-transition: opacity .5s ease;
-         -o-transition: opacity .5s ease;
-            transition: opacity .5s ease;
-}
-
-.dg-item .dg-overlay-text {
-    line-height: 100%;
-    position: absolute;
-    z-index: 11;
-    top: 70%;
-    right: 0;
-    left: 0;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    text-align: center;
-    opacity: 0;
-    color: black;
-    text-transform: uppercase;
-    -webkit-transition: opacity .5s, top .7s, ease;
-       -moz-transition: opacity .5s, top .7s, ease;
-         -o-transition: opacity .5s, top .7s, ease;
-            transition: opacity .5s, top .7s, ease;
-}
-
-.dg-item:hover .dg-overlay {
-    opacity: 1;
-}
-
-.dg-item:hover .dg-overlay-text {
-    opacity: 1;
-    top: 50%;
 }
 
 .hr-style{
