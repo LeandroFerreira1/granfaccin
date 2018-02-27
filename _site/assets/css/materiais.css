@@ -8,9 +8,15 @@
   padding-bottom: 30px;
   color: #fff;
   background-image: url('/assets/img/back.jpg');
+  background-attachment: fixed;
   margin-top: 15vh;
   text-shadow: 1px 1px #000;
   margin-bottom: -10vh;
+}
+
+.titulo-mat h1{
+  font-weight: 400;
+  font-size: 1.9em;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
@@ -81,6 +87,7 @@
     text-align: center;
     opacity: 0;
     color: #fff;
+    font-size: .8em;
 
     text-transform: uppercase;
     -webkit-transition: opacity .5s, top .7s, ease;
@@ -96,4 +103,17 @@
 .dg-item:hover .dg-overlay-text {
     opacity: 1;
     top: 50%;
+}
+
+@media screen and (min-width: 768px) {
+
+  .titulo-mat h1{
+    font-size: 2.5em;
+  }
+
+  .dg-item .dg-overlay-text {
+
+      font-size: 1em;
+
+  }
 }
