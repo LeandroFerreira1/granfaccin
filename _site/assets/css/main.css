@@ -10,6 +10,18 @@ body{
   background-attachment: fixed;
 }
 
+
+::selection {
+  color: #fff;
+  background: rgba(24, 191, 32, .6);
+  text-shadow: 1px 1px 2px #3f3f3f;
+}
+::-moz-selection {
+  color: #fff;
+  background: rgba(24, 191, 32, .6);
+  text-shadow: 1px 1px 2px #3f3f3f;
+}
+
 /*Barra de navegação*/
 .img-logo{
   height: 30px;
@@ -48,25 +60,10 @@ nav.navbar-transparente{
   font-size: 1.1em;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
-  color: #01DF01;
-  background: none;
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: rgba(24, 191, 32, 0.7);
 }
 
-.voltar-ao-topo {
-    border: solid rgba(24, 191, 32, 0.7);
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    color: green;
-    padding: 1em;
-    display: none;
-    text-align: center;
-    padding: .2em .6em .2em .6em;
-    font-size: 1.5em;
-    outline: none;
-    z-index: 1;
-  }
 
   .header-contacts{
     width: auto;
@@ -96,9 +93,26 @@ nav.navbar-transparente{
     float: right;
   }
 
-.voltar-ao-topo:hover {
-    background-color:rgba(24, 191, 32, 0.7);
+.voltar-ao-topo {
+    border: solid rgba(24, 191, 32, 0.7);
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: rgba(24, 191, 32, 0.7);
+    padding: 1em;
+    display: none;
+    text-align: center;
+    padding: .2em .6em .2em .6em;
+    font-size: 1.5em;
+    outline: none;
+    z-index: 1;
+    border-radius: 2em;
   }
+
+.voltar-ao-topo:hover {
+    color: #fff;
+    background-color:rgba(24, 191, 32, 0.7);
+}
 
 .titulo{
   color: #fff;
@@ -153,6 +167,29 @@ nav.navbar-transparente{
   margin-top: -9.4vh;
 }
 
+.service-card {
+    border: none;
+}
+
+.icon-service {
+
+    font-size: 4em;
+
+    text-align: center;
+    line-height: 5em;
+
+    height: 2em;
+
+    background: green;
+
+    color: #fff;
+
+    border-radius:2em;
+
+
+}
+
+
 .texto-servico{
   margin-top: 3vh;
   margin-bottom: 5vh;
@@ -181,14 +218,6 @@ nav.navbar-transparente{
   box-shadow: 1px 1px #008000;
 }
 
-.footer{
-  color: white;
-  background-color: #666;
-}
-
-.copyright {
-    color: #bbb;
-}
 
 .mapa{
   height: 60vh;
@@ -211,4 +240,27 @@ nav.navbar-transparente{
   .img-logo{
     height: 45px;
   }
+}
+
+.footer {
+  color: #fff;
+  padding-top: 2em;
+  font-size: .9em;
+  background: radial-gradient(circle, rgba(33,120,33,0.6),rgba(44,160,44,0.6), rgba(55,200,55,0.6));
+}
+
+.div-logo-footer {
+  padding: 1em;
+}
+
+.logo-footer {
+  height: 30px;
+}
+
+.telefones a {
+  color: #fff;
+}
+
+.copyright {
+  padding: 1em;
 }
