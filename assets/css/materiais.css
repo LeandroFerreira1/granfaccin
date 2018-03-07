@@ -1,24 +1,3 @@
-#material{
-  margin-top: 20vh;
-}
-
-.titulo-mat{
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #fff;
-  background-image: url('/assets/img/back.jpg');
-  background-attachment: fixed;
-  margin-top: 15vh;
-  text-shadow: 1px 1px #000;
-  margin-bottom: -10vh;
-}
-
-.titulo-mat h1{
-  font-weight: 400;
-  font-size: 1.9em;
-}
-
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
   color: #fff;
   cursor: default;
